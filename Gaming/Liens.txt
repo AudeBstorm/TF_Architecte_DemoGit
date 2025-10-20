@@ -1,0 +1,5 @@
+Jeu pour apprendre les bases des commandes Git
+https://ohmygit.org/
+
+Jeu pour apprendre à gérer les branches et les merges
+https://learngitbranching.js.org/?locale=fr_FR
