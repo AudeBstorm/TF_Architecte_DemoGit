@@ -59,6 +59,9 @@ Ce fichier .gitignore doit lui, être indexé/staged puis commit et se retrouver
 
 Dans certains types de projets, le .gitignore sera automatiquement créé.
 
+## Commande bonus
+Par défaut, un dossier qui est actuellement vide, ne sera pas track, ni ajouté dans le staging, ni commit et du coup, n'apparaitra pas non plus sur le repo distant. Si vous souhaitez pouvoir add+commit et envoyer un dossier vide à distance, vous pouvez ajouter un fichier .gitkeep. Ce fichier n'apparaitra pas mais permet d'ajouter le dossier au tracking.
+
 ## Commandes distant :
 
 ## Divers :
