@@ -62,7 +62,32 @@ Dans certains types de projets, le .gitignore sera automatiquement créé.
 ## Commande bonus
 Par défaut, un dossier qui est actuellement vide, ne sera pas track, ni ajouté dans le staging, ni commit et du coup, n'apparaitra pas non plus sur le repo distant. Si vous souhaitez pouvoir add+commit et envoyer un dossier vide à distance, vous pouvez ajouter un fichier .gitkeep. Ce fichier n'apparaitra pas mais permet d'ajouter le dossier au tracking.
 
+## Repository distant
+Il existe plusieurs plateformes en ligne pour héberger ces repositories distants. Les plus connues sont :
+* [Github](https://github.com/) (celui qu'on vous conseille, le plus démocratisé)
+* [Gitlab](https://gitlab.com/) (mon petit préféré)
+* [Bitbucket](https://bitbucket.org/)
+
+
 ## Commandes distant :
+Après avoir créé un repository distant, vous devrez, pour mettre en ligne la première fois, votre projet, faire les lignes suivantes :
+* Cette ligne sert à modifier votre branche principale en local pour être sûre qu'elle s'appelle main, comme la branche principale à distance
+```
+git branch -M main 
+```
+* Cette ligne permet d'ajouter dans la liste des remote (des liens vers les repository distants), un nouveau lien
+```
+git remote add origin https://github.com/AudeBstorm/TF_Architecte_DemoGit.git
+```
+* Cette ligne permet d'envoyer nos commit actuels vers le repository distant
+```
+git push -u(f) origin main
+git push -upstream origin main
+git push -upstream -force origin main
+```
+> [!Note]
+> L'option -u sert à indiquer qu'on met le focus sur la branche main de notre origin (notre repo distant) permettant pour les prochains envois d'écrire seulement git push
+> L'option -f sert à forcer le push et écraser tout contenu existant sur la branche. (attention, à utiliser que si nécessaire). Sur Gitlab, il vous est proposé dans les commandes initiales parce qu'il faut écraser le ReadMe déjà présent.
 
 ## Divers :
 * **[Ctrl] + [J]** -> Ouvre le terminal de Visual Studio Code
