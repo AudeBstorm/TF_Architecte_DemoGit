@@ -1,0 +1,6 @@
+# on ignore tout le dossier qui s'appelle infos-secretes
+/infos-secretes
+
+# On ignore les fichiers de variables d'environnement qui contiennent en général des infos confidentielles
+# .env* selectionnera tout fichier qui commence par .env suivi de n'importe quels caractères
+.env*

@@ -20,6 +20,8 @@ git init
 > Un dossier caché .git apparait alors dans votre dossier. C'est ce dossier qui contient toutes les informations de votre repository local (ex: le lien vers le repository distant, vos différents commit, etc)
 
 ## Commandes de base (local) :
+<img src="./commandes_base.png" >
+
 * Permet de savoir quel est le statut de votre repository git
 ```
 git status
@@ -49,6 +51,13 @@ git log
 git log --graph (pour afficher un graphique avec les différentes banches)
 git log --oneline (pour afficher les commits sur une seul ligne)
 ```
+
+## Gitignore
+Certains fichiers ne doivent jamais être suivis ni se retrouver dans les commits et sur le repository distant (ex: des fichiers de config, des variables d'environnement, etc). On ajoutera des règles dans un fichier .gitignore pour indiquer tous ces fichiers qu'on veut ignorer.
+
+Ce fichier .gitignore doit lui, être indexé/staged puis commit et se retrouvera sur le repo distant.
+
+Dans certains types de projets, le .gitignore sera automatiquement créé.
 
 ## Commandes distant :
 
