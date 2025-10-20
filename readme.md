@@ -43,6 +43,13 @@ git commit -m "description de ce que vous commitez"
 > [!Note]
 > Vos messages de commit doivent être clairs, expliquer ce que vous faites (ajout d'une fonctionnalité, réglage d'un bug, etc) et on essaie au max de les faire en anglais
 
+* Permet d'afficher un résumé de tous les commits
+```
+git log 
+git log --graph (pour afficher un graphique avec les différentes banches)
+git log --oneline (pour afficher les commits sur une seul ligne)
+```
+
 ## Commandes distant :
 
 ## Divers :
