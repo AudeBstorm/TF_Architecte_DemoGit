@@ -108,5 +108,26 @@ git pull
 ```
 Cette ligne permettra de récupérer l'état actuel de la branche distante en local sur votre machine (⚠️ parfois il faudra gérer quelques conflits)
 
+## Collaborer sur un projet
+La majorité du temps, on ne travaille pas directement sur la branche main (qui d'ailleurs sera bloquée sur Gitlab), on va créer des branches\
+Vous devrez vous adapter au cadre de travail mais souvent on conseille main>Dev>Features
+
+### Créer une branche
+Créer une branche
+```
+git branch nom_branche
+```
+
+Se déplacer sur une branche
+```
+git checkout nom_branche
+git checkout numero_commit
+```
+
+Créer la branche puis se déplacer dessus 
+```
+git checkout -b nom_branche
+```
+
 ## Divers :
 * **[Ctrl] + [J]** -> Ouvre le terminal de Visual Studio Code
