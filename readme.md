@@ -112,6 +112,8 @@ Cette ligne permettra de récupérer l'état actuel de la branche distante en lo
 La majorité du temps, on ne travaille pas directement sur la branche main (qui d'ailleurs sera bloquée sur Gitlab), on va créer des branches\
 Vous devrez vous adapter au cadre de travail mais souvent on conseille main>Dev>Features
 
+<img src="./branches.png"> 
+
 ### Créer une branche
 Créer une branche
 ```
@@ -128,6 +130,28 @@ Créer la branche puis se déplacer dessus
 ```
 git checkout -b nom_branche
 ```
+
+> [!Note]
+> Quand vous allez faire votre premier push, il faudra de nouveau pour mettre en upstream dessus
+> ```
+> git push -u origin nom_branche
+>```
+> Si la branche n'existe pas à distance, pas de panique, elle va être créée automatiquement.
+
+### Fusionner deux branches
+Pour fusionner deux branches, il faudra se placer sur la branche qui va recevoir
+```
+git checkout branche_parente(main)
+```
+Et effectuer un merge de la branche désirée
+```
+git merge branche_enfant(gaming)
+```
+
+> [!Warning]
+> Attention, si un des fichiers que vous allez merge entre en conflit avec une fichier de la branche sur laquelle vous êtes, un conflit va se créer. Impossible de merge tant que le conflit n'est pas réglé. Vous allez donc devoir choisir le code que vous voulez conserver.\
+> Dans vos logiciel d'édition de code (VSC, VS, Rider, WebStorm) vous aurez une fenêtre spéciale qui vous proposera les deux morceaux de code en conflit. Vous pourrez choisir de conserver le current (brancheParente qui va accueillir le merge), le incoming (brancheEnfant que vous souhaitez merge) ou de conserver les deux.
+
 
 ## Divers :
 * **[Ctrl] + [J]** -> Ouvre le terminal de Visual Studio Code
