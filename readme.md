@@ -70,6 +70,7 @@ Il existe plusieurs plateformes en ligne pour héberger ces repositories distant
 
 
 ## Commandes distant :
+### Première mise en ligne du projet
 Après avoir créé un repository distant, vous devrez, pour mettre en ligne la première fois, votre projet, faire les lignes suivantes :
 * Cette ligne sert à modifier votre branche principale en local pour être sûre qu'elle s'appelle main, comme la branche principale à distance
 ```
@@ -86,8 +87,18 @@ git push -upstream origin main
 git push -upstream -force origin main
 ```
 > [!Note]
-> L'option -u sert à indiquer qu'on met le focus sur la branche main de notre origin (notre repo distant) permettant pour les prochains envois d'écrire seulement git push
-> L'option -f sert à forcer le push et écraser tout contenu existant sur la branche. (attention, à utiliser que si nécessaire). Sur Gitlab, il vous est proposé dans les commandes initiales parce qu'il faut écraser le ReadMe déjà présent.
+> L'option -u sert à indiquer qu'on met le focus sur la branche main de notre origin (notre repo distant) permettant pour les prochains envois d'écrire seulement git push\
+L'option -f sert à forcer le push et écraser tout contenu existant sur la branche. (attention, à utiliser que si nécessaire). Sur Gitlab, il vous est proposé dans les commandes initiales parce qu'il faut écraser le ReadMe déjà présent.
+
+### Partir d'un projet déjà existant à distance
+```
+git clone LIENVERSPROJET
+```
+Cette commande vous créé un repository local déjà tout paramétré avec le lien remote qui est fait. Il n'y a plus qu'à travailler de votre côté.
+
+### Récupérer du travail qu'une autre personne a fait
+
+
 
 ## Divers :
 * **[Ctrl] + [J]** -> Ouvre le terminal de Visual Studio Code
