@@ -70,6 +70,8 @@ Il existe plusieurs plateformes en ligne pour héberger ces repositories distant
 
 
 ## Commandes distant :
+<img src="./commandes_distance.png">
+
 ### Première mise en ligne du projet
 Après avoir créé un repository distant, vous devrez, pour mettre en ligne la première fois, votre projet, faire les lignes suivantes :
 * Cette ligne sert à modifier votre branche principale en local pour être sûre qu'elle s'appelle main, comme la branche principale à distance
@@ -97,8 +99,14 @@ git clone LIENVERSPROJET
 Cette commande vous créé un repository local déjà tout paramétré avec le lien remote qui est fait. Il n'y a plus qu'à travailler de votre côté.
 
 ### Récupérer du travail qu'une autre personne a fait
-
-
+```
+git fetch
+```
+Cette ligne permettra de savoir si la branche du repository distant a été modifiée par rapport à la version que vous avons sur notre branche.
+```
+git pull
+```
+Cette ligne permettra de récupérer l'état actuel de la branche distante en local sur votre machine (⚠️ parfois il faudra gérer quelques conflits)
 
 ## Divers :
 * **[Ctrl] + [J]** -> Ouvre le terminal de Visual Studio Code
