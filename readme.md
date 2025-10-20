@@ -27,6 +27,22 @@ git status
 > [!NOTE]
 > Cette commande vous affichera les fichiers qui ne sont pas suivis (untracked), les fichiers suivis mais qui ne sont pas encore commit,...
 
+* Permet d'ajouter les fichiers qui ont été modifiés/créés/supprimés dans la zone de staging
+```
+git add nomFichier
+git add nomDossier
+git add . 
+```
+> [!Note]
+> git add . permet de directement ajouter au stating, tous les fichiers changed (modifiés, créés, supprimés)
+
+* Permet de faire une version à l'instant T avec tous les fichiers actuellement dans la zone de staging
+```
+git commit -m "description de ce que vous commitez"
+```
+> [!Note]
+> Vos messages de commit doivent être clairs, expliquer ce que vous faites (ajout d'une fonctionnalité, réglage d'un bug, etc) et on essaie au max de les faire en anglais
+
 ## Commandes distant :
 
 ## Divers :
